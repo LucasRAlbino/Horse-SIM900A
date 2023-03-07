@@ -8,7 +8,7 @@ To use Horse SMS, follow the steps below:
 4. Double-click the `Horse_Sms.exe` file.
 5. Wait a few seconds for the server to be ready to send SMS messages.
 6. Open your browser and go to the address `http://localhost:9000/EnviaSms/number/message`.
-7. Fill in the fields of the endpoint, "number" and "message". Example: http://localhost:9000/88888880000/Hello World.
+7. Fill in the fields of the endpoint, "number" and "message". Example: http://localhost:9000/EnviaSms/88888880000/Hello World.
 8. Wait a few moments for the message to be sent.
 
 That's it! Now you can use Horse SMS to send text messages through the SIM900A module.

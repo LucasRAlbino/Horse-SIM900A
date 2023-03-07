@@ -12,3 +12,5 @@ Para utilizar o Horse SMS, siga os passos abaixo:
 
 Pronto! Agora você já pode utilizar o Horse SMS para enviar mensagens de texto por meio do módulo SIM900A.
 
+OBS: Você deverá carregar o código para o arduino que está na pasta do mesmo nome.
+

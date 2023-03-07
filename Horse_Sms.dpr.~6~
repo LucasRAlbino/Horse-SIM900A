@@ -1,0 +1,29 @@
+program Horse_Sms;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses Horse, System.SysUtils, Horse.Jhonson, System.JSON;
+
+begin
+
+  var
+    dados: TJSONArray;
+
+  THorse.Use(Jhonson);
+  THorse.Get('/sms/:numero/:mensagem',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+
+    var
+      Numero: String;
+      Mensagem: String;
+
+    begin
+    Numero := Req.Params['numero'];
+    Mensagem := Req.Params['mensagem'];
+    Res.Send('Número: ' + Numero + ', Mensagem: '+ Mensagem);
+    end);
+
+  THorse.Listen(9000);
+end.
